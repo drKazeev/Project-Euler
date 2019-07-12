@@ -114,6 +114,10 @@ unsigned long long triangle_sum(std::string fpath);
 ///How many Sundays fell on the first of the month during the twentieth century(1 Jan 1901 to 31 Dec 2000) ?
 size_t count_sundays();
 
+//problem20
+///Find the sum of the digits in the number 100!
+size_t dig_fact_sum();
+
 //Problem114
 ///A row measuring seven units in length has red blocks with a minimum length of three units placed on it, such
 ///that any two red blocks (which are allowed to be different lengths) are separated by at least one grey square. There are exactly seventeen 

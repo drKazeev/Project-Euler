@@ -1,5 +1,6 @@
 #include "ProjectEuler.h"
 #include "DaysOfYear.h"
+
 //Problem 1
 size_t sum_multi_3_5_below_1000()
 {
@@ -421,6 +422,41 @@ size_t count_sundays()
 	}
 	return res;
 }
+
+//problem20
+size_t dig_fact_sum()
+{
+	std::vector<unsigned long long> res = { 1 };
+
+	for (unsigned int factor = 2; factor <= 100; factor++)
+	{
+		unsigned int d = 0;
+		for (auto& x : res)
+		{
+			x = x * factor + d;
+			if (x >= 10)
+			{
+				d = x / 10;
+				x %= 10;
+			}
+			else d = 0;
+		}
+
+		while (d != 0)
+		{
+			res.push_back(d % 10);
+			d /= 10;
+		}
+	}
+
+	unsigned long long sum = 0;
+	for (auto x : res)
+		sum += x;
+	return sum;
+}
+
+
+
 
 //Problem114
 std::vector<unsigned long long> cache(51, 0);
