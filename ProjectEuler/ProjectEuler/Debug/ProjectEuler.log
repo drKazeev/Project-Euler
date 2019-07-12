@@ -1,0 +1,30 @@
+﻿  main.cpp
+  ProjectEuler.cpp
+c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.15.26726\include\xutility(2414): warning C4244: аргумент: преобразование "unsigned __int64" в "const _Ty", возможна потеря данных
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.15.26726\include\xutility(2434): note: выполняется компиляция ссылки на экземпляр шаблон функции "_OutIt std::_Copy_unchecked1<_InIt,_OutIt>(_InIt,_InIt,_OutIt,std::_General_ptr_iterator_tag)"
+          with
+          [
+              _OutIt=std::ostream_iterator<int,char,std::char_traits<char>>,
+              _InIt=unsigned __int64 *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.15.26726\include\xutility(2445): note: выполняется компиляция ссылки на экземпляр шаблон функции "_OutIt std::_Copy_unchecked<unsigned __int64*,_Iter>(_InIt,_InIt,_OutIt)"
+          with
+          [
+              _OutIt=std::ostream_iterator<int,char,std::char_traits<char>>,
+              _Iter=std::ostream_iterator<int,char,std::char_traits<char>>,
+              _InIt=unsigned __int64 *
+          ]
+  c:\users\1\source\repos\projecteuler\projecteuler\projecteuler.cpp(397): note: выполняется компиляция ссылки на экземпляр шаблон функции "_OutIt std::copy<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,std::ostream_iterator<int,char,std::char_traits<char>>>(_InIt,_InIt,_OutIt)"
+          with
+          [
+              _OutIt=std::ostream_iterator<int,char,std::char_traits<char>>,
+              _Ty=unsigned __int64,
+              _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<unsigned __int64>>>
+          ]
+  Создание кода...
+c:\users\1\source\repos\projecteuler\projecteuler\projecteuler.cpp(159): warning C4715: pyth_tryplet: значение возвращается не при всех путях выполнения
+  ProjectEuler.vcxproj -> C:\Users\1\source\repos\ProjectEuler\Debug\ProjectEuler.exe
