@@ -101,8 +101,23 @@ size_t numbers_to_letters_sum();
 ///Find triangle sum(input path to txt file with triangle)
 unsigned long long triangle_sum(std::string fpath);
 
+//Problem19
+///You are given the following information, but you may prefer to do some research for yourself.
+///1 Jan 1900 was a Monday.
+///Thirty days has September,
+///April, June and November.
+///All the rest have thirty - one,
+///Saving February alone,
+///Which has twenty - eight, rain or shine.
+///And on leap years, twenty - nine.
+///A leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.
+///How many Sundays fell on the first of the month during the twentieth century(1 Jan 1901 to 31 Dec 2000) ?
+size_t count_sundays();
+
 //Problem114
-//::vector<unsigned long long> cache;
+///A row measuring seven units in length has red blocks with a minimum length of three units placed on it, such
+///that any two red blocks (which are allowed to be different lengths) are separated by at least one grey square. There are exactly seventeen 
+///ways of doing this. How many ways can a row measuring fifty units in length be filled?
 unsigned long long counting_block_combinations(int m, int n);
 
 #endif

@@ -1,5 +1,5 @@
 #include"ProjectEuler.h"
-
+#include "DaysOfYear.h"
 
 int main()
 {
@@ -42,6 +42,8 @@ int main()
 	std::cout << "Problem 17:" << numbers_to_letters_sum() << std::endl;
 
 	std::cout << "Problem 18:" << triangle_sum("Problem18.txt") << std::endl;
+
+	std::cout << "Problem 19:" << count_sundays() << std::endl;
 
 	std::cout << "Problem 67:" << triangle_sum("Problem67.txt") << std::endl;
 

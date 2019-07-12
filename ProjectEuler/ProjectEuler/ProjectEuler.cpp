@@ -1,4 +1,5 @@
 #include "ProjectEuler.h"
+#include "DaysOfYear.h"
 //Problem 1
 size_t sum_multi_3_5_below_1000()
 {
@@ -404,6 +405,21 @@ unsigned long long triangle_sum(std::string fpath)
 	}
 
 	return *std::max_element(res.begin(), res.end());
+}
+
+
+//problem19
+size_t count_sundays()
+{
+	size_t res = 0;
+	DaysOfYear Date(1, JAN, 1901, MON);
+	DaysOfYear finish(1, JAN, 2000);
+	while (Date!=finish)
+	{
+		if (Date.day==1 && Date.dayOfWeek == SUN) res++;
+		++Date;
+	}
+	return res;
 }
 
 //Problem114
