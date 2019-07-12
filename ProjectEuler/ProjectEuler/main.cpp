@@ -46,6 +46,8 @@ int main()
 
 	std::cout << "Problem 20:" << dig_fact_sum() << std::endl;
 
+	std::cout << "Problem 21:" << amicable_numbers() << std::endl;
+
 	std::cout << "Problem 67:" << triangle_sum("Problem67.txt") << std::endl;
 
 	std::cout << "Problem 114:" <<counting_block_combinations(50, 3) << std::endl;

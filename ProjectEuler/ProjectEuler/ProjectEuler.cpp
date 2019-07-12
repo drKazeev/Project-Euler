@@ -457,6 +457,26 @@ size_t dig_fact_sum()
 
 
 
+int sum_of_divisors(int n)
+{
+	int res = 1;
+	for (auto i = 2; i <= round(sqrt(n)); i++)
+		if (n%i == 0)
+		{
+			res += i;
+			res += (n / i);
+		}
+	return res;
+}
+
+//problem21
+int amicable_numbers()
+{
+	int res = 0;
+	for (int i = 2; i < 10000; i++)
+		if (i == sum_of_divisors(sum_of_divisors(i)) && sum_of_divisors(i) != i) res += i;
+	return res;
+}
 
 //Problem114
 std::vector<unsigned long long> cache(51, 0);
