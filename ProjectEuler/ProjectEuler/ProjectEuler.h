@@ -144,6 +144,10 @@ std::vector<std::string> split(const std::string& s, char delimiter);
 ///Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers
 size_t non_abundant_sums();
 
+//Problem24
+///What is the millionth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9?
+std::vector<size_t> lex_permutation();
+
 //Problem114
 ///A row measuring seven units in length has red blocks with a minimum length of three units placed on it, such
 ///that any two red blocks (which are allowed to be different lengths) are separated by at least one grey square. There are exactly seventeen 

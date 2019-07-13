@@ -544,6 +544,14 @@ size_t non_abundant_sums()
 	return res;
 }
 
+std::vector<size_t> lex_permutation()
+{
+	std::vector<size_t> v = { 0,1,2,3,4,5,6,7,8,9 };
+	for (auto i = 1; i < 1000000; i++)
+		std::next_permutation(v.begin(), v.end());
+	return v;
+}
+
 //Problem114
 std::vector<unsigned long long> cache(51, 0);
 unsigned long long counting_block_combinations(int m, int n)

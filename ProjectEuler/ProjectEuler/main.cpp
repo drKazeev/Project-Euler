@@ -52,6 +52,12 @@ int main()
 
 	std::cout << "Problem 23:" << non_abundant_sums() << std::endl;
 
+	std::cout << "Problem 24:";
+	std::vector<size_t> problem24 = lex_permutation();
+	for (auto x : problem24)
+		std::cout << x;
+	std::cout << std::endl;
+
 	std::cout << "Problem 67:" << triangle_sum("Problem67.txt") << std::endl;
 
 	std::cout << "Problem 114:" <<counting_block_combinations(50, 3) << std::endl;
