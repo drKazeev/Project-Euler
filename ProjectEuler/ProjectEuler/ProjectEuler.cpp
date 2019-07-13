@@ -478,6 +478,42 @@ int amicable_numbers()
 	return res;
 }
 
+//Problem22
+std::vector<std::string> split(const std::string & s, char delimiter)
+{
+	std::vector<std::string> tokens;
+	std::string token;
+	std::istringstream tokenStream(s);
+	while (std::getline(tokenStream, token, delimiter))
+	{
+		tokens.push_back(token);
+	}
+	return tokens;
+}
+
+unsigned long long names_score(std::string fpath)
+{
+	std::ifstream file(fpath);
+	std::string str;
+	std::getline(file, str);
+	std::vector<std::string> names = split(str, ',');
+	for (auto& x : names)
+	{
+		x.erase(0, 1);
+		x.erase(x.size() - 1, 1);
+	}
+	std::sort(names.begin(), names.end());
+	unsigned long long res = 0;
+	for (size_t i = 0; i < names.size(); i++)
+	{
+		int tmp = 0;
+		for (size_t j = 0; j < names[i].size(); j++)
+			tmp += names[i][j] - 'A'+1;
+		res = res + tmp * (i + 1);
+	}
+	return res;
+}
+
 //Problem114
 std::vector<unsigned long long> cache(51, 0);
 unsigned long long counting_block_combinations(int m, int n)
@@ -495,6 +531,7 @@ unsigned long long counting_block_combinations(int m, int n)
 	cache[m] = solutions;
 	return solutions;
 }
+
 
 
 

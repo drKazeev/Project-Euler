@@ -130,10 +130,20 @@ int sum_of_divisors(int n);
 ///solving problem
 int amicable_numbers();
 
+//Problem22
+///Using names.txt (right click and 'Save Link/Target As...'), a 46K text file containing over 
+///five-thousand first names, begin by sorting it into alphabetical order. Then working out the 
+///alphabetical value for each name, multiply this value by its alphabetical position in the list to obtain a name score.
+unsigned long long names_score(std::string fpath);
+
+///split string to words by delmiter
+std::vector<std::string> split(const std::string& s, char delimiter);
+
 //Problem114
 ///A row measuring seven units in length has red blocks with a minimum length of three units placed on it, such
 ///that any two red blocks (which are allowed to be different lengths) are separated by at least one grey square. There are exactly seventeen 
 ///ways of doing this. How many ways can a row measuring fifty units in length be filled?
 unsigned long long counting_block_combinations(int m, int n);
+
 
 #endif
