@@ -459,12 +459,13 @@ size_t dig_fact_sum()
 
 int sum_of_divisors(int n)
 {
+
 	int res = 1;
 	for (auto i = 2; i <= round(sqrt(n)); i++)
 		if (n%i == 0)
 		{
 			res += i;
-			res += (n / i);
+			if (i*i!=n) res += (n / i);
 		}
 	return res;
 }
@@ -491,6 +492,7 @@ std::vector<std::string> split(const std::string & s, char delimiter)
 	return tokens;
 }
 
+
 unsigned long long names_score(std::string fpath)
 {
 	std::ifstream file(fpath);
@@ -511,6 +513,34 @@ unsigned long long names_score(std::string fpath)
 			tmp += names[i][j] - 'A'+1;
 		res = res + tmp * (i + 1);
 	}
+	return res;
+}
+
+//Problem23
+size_t non_abundant_sums()
+{
+	size_t lim = 28124;
+	std::vector<bool> nums(lim, false);
+	for (size_t i = 1; i < nums.size(); i++)
+		if (i < sum_of_divisors(i)) nums[i] = true;
+
+	std::vector<int> abundant_nums;
+	abundant_nums.reserve(6200);
+	for (size_t i = 1; i < nums.size(); i++)
+		if (nums[i]) abundant_nums.push_back(i);
+
+	std::vector<bool> res_arr(lim, false);
+	for (size_t i = 0; i < abundant_nums.size(); i++)
+		for (size_t j = i; i < abundant_nums.size(); j++)
+			if (abundant_nums[i]+ abundant_nums[j] < lim)
+			{
+				 res_arr[abundant_nums[i] + abundant_nums[j]] = true;
+			}
+			else break;
+
+	size_t res = 0;
+	for (size_t i = 1; i < res_arr.size(); i++)
+		if (!res_arr[i]) res += i;
 	return res;
 }
 

@@ -8,7 +8,7 @@ int main()
 
 	std::cout << "Problem 3:" << largest_prime_factor() << std::endl;
 
-	//std::cout << "Problem 4:" << largest_palindrome() << std::endl;
+	std::cout << "Problem 4:" << largest_palindrome() << std::endl;
 
 	std::cout << "Problem 5:" << divisible_1_to_20() << std::endl;
 
@@ -18,13 +18,13 @@ int main()
 
 	std::cout << "Problem 8:" << find_max_prod_in_1000digit() << std::endl;
 
-	//std::cout << "Problem 9:" << pyth_tryplet()<< std::endl;
+	std::cout << "Problem 9:" << pyth_tryplet()<< std::endl;
 
 	//std::cout << "Problem 10:" << sum_primes_below_2mln() << std::endl;
 
 	std::cout << "Problem 11:" << max_in_adj_numbers() << std::endl;
 
-	//std::cout << "Problem 12:" << triangle_number_over500_divisors() << std::endl;
+	std::cout << "Problem 12:" << triangle_number_over500_divisors() << std::endl;
 
 	std::cout << "Problem 13:";
 	auto v = mega_sum("Problem13.txt");
@@ -49,6 +49,8 @@ int main()
 	std::cout << "Problem 21:" << amicable_numbers() << std::endl;
 
 	std::cout << "Problem 22:" << names_score("Problem22.txt") << std::endl;
+
+	std::cout << "Problem 23:" << non_abundant_sums() << std::endl;
 
 	std::cout << "Problem 67:" << triangle_sum("Problem67.txt") << std::endl;
 

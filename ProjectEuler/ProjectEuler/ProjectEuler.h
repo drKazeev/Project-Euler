@@ -12,6 +12,7 @@
 #include<iterator>
 #include<algorithm>
 
+
 //Problem 1
 ///Find the sum of all the multiples of 3 or 5 below 1000.
 size_t sum_multi_3_5_below_1000();
@@ -138,6 +139,10 @@ unsigned long long names_score(std::string fpath);
 
 ///split string to words by delmiter
 std::vector<std::string> split(const std::string& s, char delimiter);
+
+//Problem23
+///Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers
+size_t non_abundant_sums();
 
 //Problem114
 ///A row measuring seven units in length has red blocks with a minimum length of three units placed on it, such
