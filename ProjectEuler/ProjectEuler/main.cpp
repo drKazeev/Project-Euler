@@ -58,6 +58,8 @@ int main()
 		std::cout << x;
 	std::cout << std::endl;
 
+	std::cout << "Problem 25:" << digit1000_Fib() << std::endl;
+
 	std::cout << "Problem 67:" << triangle_sum("Problem67.txt") << std::endl;
 
 	std::cout << "Problem 114:" <<counting_block_combinations(50, 3) << std::endl;

@@ -544,12 +544,18 @@ size_t non_abundant_sums()
 	return res;
 }
 
+//problem24
 std::vector<size_t> lex_permutation()
 {
 	std::vector<size_t> v = { 0,1,2,3,4,5,6,7,8,9 };
 	for (auto i = 1; i < 1000000; i++)
 		std::next_permutation(v.begin(), v.end());
 	return v;
+}
+
+size_t digit1000_Fib()
+{
+	return std::round((log(10) * 999 + log(5) / 2) / log(1.618033988749895));
 }
 
 //Problem114

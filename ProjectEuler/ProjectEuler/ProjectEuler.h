@@ -148,6 +148,10 @@ size_t non_abundant_sums();
 ///What is the millionth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9?
 std::vector<size_t> lex_permutation();
 
+//Problem25
+///What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
+size_t digit1000_Fib();
+
 //Problem114
 ///A row measuring seven units in length has red blocks with a minimum length of three units placed on it, such
 ///that any two red blocks (which are allowed to be different lengths) are separated by at least one grey square. There are exactly seventeen 
