@@ -558,6 +558,15 @@ size_t digit1000_Fib()
 	return std::round((log(10) * 999 + log(5) / 2) / log(1.618033988749895));
 }
 
+size_t distinst_pows()
+{
+	std::unordered_set<double> nums;
+	for (auto a = 2; a <= 100; a++)
+		for (auto b = 2; b <= 100; b++)
+			nums.insert(pow(a, b));
+	return nums.size();
+}
+
 //Problem114
 std::vector<unsigned long long> cache(51, 0);
 unsigned long long counting_block_combinations(int m, int n)
