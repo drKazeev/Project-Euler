@@ -553,11 +553,13 @@ std::vector<size_t> lex_permutation()
 	return v;
 }
 
+//problem25
 size_t digit1000_Fib()
 {
 	return std::round((log(10) * 999 + log(5) / 2) / log(1.618033988749895));
 }
 
+//problem29
 size_t distinst_pows()
 {
 	std::unordered_set<double> nums;
@@ -565,6 +567,23 @@ size_t distinst_pows()
 		for (auto b = 2; b <= 100; b++)
 			nums.insert(pow(a, b));
 	return nums.size();
+}
+
+double fifth_pow_sum()
+{
+	double res = 0;
+	for (auto i = 2; i < 1000000; i++)
+	{
+		auto tmp = i;
+		double sum = 0;
+		while (tmp != 0)
+		{
+			sum += pow(tmp % 10, 5);
+			tmp /= 10;
+		}
+		if (round(sum) == i) res += i;
+	}
+	return res;
 }
 
 //Problem114
