@@ -160,6 +160,9 @@ size_t distinst_pows();
 ///Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.
 double fifth_pow_sum();
 
+//Problem34
+int sum_dig_facors();
+
 //Problem114
 ///A row measuring seven units in length has red blocks with a minimum length of three units placed on it, such
 ///that any two red blocks (which are allowed to be different lengths) are separated by at least one grey square. There are exactly seventeen 

@@ -586,6 +586,27 @@ double fifth_pow_sum()
 	return res;
 }
 
+int sum_dig_facors()
+{
+	int res = 0;
+	for (auto i = 5; i < 100000; i++)
+	{
+		auto sum = 0;
+		auto tmp = i;
+		while (tmp != 0)
+		{
+			auto dig = tmp % 10;
+			tmp /= 10;
+			int fact = 1;
+			for (auto j = 2; j <= dig; j++)
+				fact = fact * j;
+			sum += fact;
+		}
+		if (sum==i) res+=i;
+	}
+	return res;
+}
+
 //Problem114
 std::vector<unsigned long long> cache(51, 0);
 unsigned long long counting_block_combinations(int m, int n)
